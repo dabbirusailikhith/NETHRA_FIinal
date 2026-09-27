@@ -1,0 +1,22 @@
+# Secrets and machine-specific paths — never commit.
+local.properties
+
+# Model weights stay out of source control and out of the APK.
+model/*.litertlm
+model/*.task
+model/*.bin
+model/*.tflite
+
+# Build output
+.gradle/
+.kotlin/
+build/
+app/build/
+captures/
+*.apk
+*.aab
+
+# IDE
+.idea/
+*.iml
+.DS_Store
